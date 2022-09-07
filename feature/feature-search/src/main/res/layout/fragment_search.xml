@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.SearchFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_search"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/colorSearch"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/colorAccent"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconMode="clear_text"
+                app:expandedHintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="10dp"
+                    android:hint="Cari film favorit kamu"
+                    android:imeOptions="actionSearch"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="0dp"
+                    android:textSize="12sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

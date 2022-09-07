@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.detail.TvDetailFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_movie"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_movie"
+        tools:text="@tools:sample/lorem/random" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_genres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:text="@tools:sample/lorem" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="12dp"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genres"
+        tools:text="@tools:sample/lorem" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_runtime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="12dp"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_year"
+        tools:text="@tools:sample/lorem" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_rating"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_metascore"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_runtime"
+        app:srcCompat="@drawable/ic_star" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/10"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/iv_rating"
+        app:layout_constraintStart_toStartOf="@+id/iv_rating"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rating" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24317794"
+        app:layout_constraintEnd_toEndOf="@id/iv_rating"
+        app:layout_constraintStart_toStartOf="@+id/iv_rating"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rating" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_metascore"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_rating"
+        app:layout_constraintTop_toTopOf="@+id/iv_rating"
+        app:srcCompat="@drawable/ic_metascore" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_metascore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metascore"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_metascore"
+        app:layout_constraintStart_toStartOf="@+id/iv_metascore"
+        app:layout_constraintTop_toBottomOf="@+id/iv_metascore" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90"
+        app:layout_constraintEnd_toEndOf="@id/iv_metascore"
+        app:layout_constraintStart_toStartOf="@+id/iv_metascore"
+        app:layout_constraintTop_toBottomOf="@+id/tv_metascore" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popular_tv_nav_graph"
+    app:startDestination="@id/popularTvFragment">
+
+    <fragment
+        android:id="@+id/popularTvFragment"
+        android:name="id.hwaryun.feature_popular_tv.presentation.ui.tv.PopularTvFragment"
+        android:label="fragment_popular_tv"
+        tools:layout="@layout/fragment_popular_tv" >
+        <action
+            android:id="@+id/action_popularTvFragment_to_tvDetailFragment"
+            app:destination="@id/tvDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvDetailFragment"
+        android:name="id.hwaryun.feature_popular_tv.presentation.ui.detail.TvDetailFragment"
+        android:label="fragment_tv_detail"
+        tools:layout="@layout/fragment_tv_detail" >
+        <argument
+            android:name="tvId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

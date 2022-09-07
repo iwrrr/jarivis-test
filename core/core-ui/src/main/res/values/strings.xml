@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_error_no_internet">Something is wrong with internet connection\nMake sure you have an Internet Connection and try again.</string>
+    <string name="message_error_unknown">Something is wrong when fetch data\nPlease try again</string>
+</resources>
